@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="application" class="app">
+            <div id="mainWrapper" class="wrapper">
+                <div id="widgetEmbed" class="widgit bot embed">
+                    <widgetbot
+                    server="1284285373572321350"
+                    channel="1284285373572321353"
+                    width="80%"
+                    height="100vh"
+                    embed.on('sentMessage', (data) => {
+                        <script>
+                            console.log(`Sent message in #${data.channel.name}`, data);
+                        </script>
+                    })
+                    ></widgetbot>
+                    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+                </div>
+                <div id="resourcesBackground" class="resoucrs background">
+                    <div id="resources" class="resources wrapper">
+                        <div id="resourcesButtons" class="resources wrapper">
+                            <button id="skyward" class="skyward button"> Skyward </button>
+                            <button id="canvas" class="canvas button"> Canvas </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
