@@ -1,1 +1,73 @@
+:root{
+    --background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJUNHTBUnorcoKeBOjkgu0mRdHh4L3B6gl7DNh1D-D2LTMWavMcDNCcDb1U9iVyQooF_k:https://preview.redd.it/han-sooyoung-really-is-the-whole-package-not-only-is-she-a-v0-beul63upv2dc1.png%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D6b9f2b683d2ab6a8ee4a10dac61e8279943ea9b0&usqp=CAU')
+}
 
+*{
+    margin: 0;
+    left: 0;
+}
+
+#mainWrapper{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+}
+
+#widgitEmbed{
+    position: absolute;
+    flex: 1;
+}
+
+#resourcesBackground{
+    background: var(--background-image);
+    width: 20%;
+    height: 100vh;
+    left: 80%;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#resources{
+    background-color: hsl(0, 0%, 0%, .65);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex: 1;
+    backdrop-filter: blur(7px);
+}
+
+#resources #resourcesButtons{
+    background: hsl(0, 0%, 10%, .75);
+    width: 10%;
+    height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#resources #resourcesButtons .button{
+    width: 75px;
+    height: 25px;
+    margin-left: 10px;
+    background: hsl(0, 0%, 0%, .50);
+    color: hsl(0, 0%, 100%);
+    border: solid 1px hsla(0, 0%, 40%, 0.5);
+}
+
+#resources #resourcesButtons .button:hover{
+    background: hsla(0, 0%, 40%, 0.5);
+    color: hsl(0, 0%, 80%);
+}
+
+#resources #resourcesButtons .button:not(#resources #resourcesButtons .button:last-child){
+    margin-bottom: 10px;
+}
