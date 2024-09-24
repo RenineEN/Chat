@@ -1,7 +1,21 @@
+window.addEventListener("load", (event) => {
+    console.log("page is fully loaded");
+});
+
 document.getElementById("skyward").onclick = function(){
-  window.open("https://login.microsoftonline.com/c6bfee2d-24f8-41d7-88a1-214cad6717da/saml2");
+    try{
+        window.open("https://skyward10.iscorp.com/SkySTSgarlandtxstu/sso/Skyward/login/SSO", type="_blank");
+    } catch (err){
+        console.log(err);
+        alert(err);
+    }
 }
 
 document.getElementById("canvas").onclick = function(){
-  window.open("https://garlandisd.instructure.com/login/saml");
+    try{
+        window.open("https://garlandisd.instructure.com/login/saml");
+    } catch (err){
+        console.log(err);
+        alert(err);
+    }
 }
