@@ -1,5 +1,6 @@
 javascript:
 var s = document.createElement('link');
+s.rel = 'stylesheet';
 s.href = `https://rawcdn.githack.com/RenineEN/School_Resources/fbabcdb12f1e412e2bddc9b0ea766c1c6959fbc6/Assests/CanvasCSS/Toya/Toya.css`;
 document.head.appendChild(s);
 
