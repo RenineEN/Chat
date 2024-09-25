@@ -1,7 +1,4 @@
-javascript:
-var s = document.createElement('style');
-s.textContent = 
-`:root {
+:root {
     /*Variables*/
     /*Images*/
     --helpTrayImg: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAcD_iSm8l_0fpnPIJBbUkHZWcSmjc2B2MjQ&usqp=CAU=);
@@ -659,18 +656,4 @@ input[type=checkbox] {
 /**/
 /**/
 /**/
-/**/`;
-document.head.appendChild(s);
-
-(function(){
-    Notification.requestPermission().then(perm => {
-        if(perm === 'granted'){
-            new Notification('Wao~', {
-                body: 'Successfully Applied CSS!',
-                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3J5WcqjK7Csi7k-z0Gv8k59H-fdl5EgL-beJdsqKhy58mryDjnlyjztPMPvBRqj-jjQ&usqp=CAU',
-                tag: 'applied css',
-                renotify: true
-            })
-        }
-    })
-})()
+/**/
