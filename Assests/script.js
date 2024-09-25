@@ -1,5 +1,6 @@
+window.addEventListener("load", (event) => {
+    console.log("page is fully loaded");
 
-window.onload = function(){
     Notification.requestPermission().then(perm => {
         if(perm === 'granted'){
             new Notification('Wao~', {
@@ -10,9 +11,6 @@ window.onload = function(){
             })
         }
     })
-}
-window.addEventListener("load", (event) => {
-    console.log("page is fully loaded");
 });
 
 document.getElementById("canvas").onclick = function(){
